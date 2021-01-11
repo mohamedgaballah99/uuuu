@@ -1,0 +1,312 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body{
+    height: 2000px;
+}
+header{
+    background-color: #9b552e;
+    padding: 7px;
+    a{
+        color: white;
+        text-decoration: none;
+        &:hover{
+            color: white;
+            text-decoration: underline;
+        }
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .lang{
+            a{
+                text-transform: uppercase;
+                margin-right: 5px;
+            }
+        }
+        .conn{
+            display: flex;
+            img{
+                padding-right: 6px;
+            }
+            .phone{
+                margin-right: 35px;
+            }
+            
+        }
+        .social{
+            display: flex;
+            img{
+                margin-right: 6px;
+            }
+            .search{
+                margin-right: 25px;
+            }
+        }
+    }
+}
+// media of toolbar\
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    header{
+        .container{
+            width: 90% !important;
+            margin: auto;
+            > div{
+                margin: auto;
+                display: block;
+            }
+            .conn{
+                width: 100%;
+                display: block;
+                margin: auto !important;
+                .phone{
+                    margin:10px auto !important;
+                    display: block;
+                    width: 80%;
+                }
+                .mess{
+                    margin:10px auto;
+                    width: 100%;
+                }
+            }
+           
+            
+        }
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    header{
+        .container{
+           .social{
+               margin: 10px auto;
+           }
+           
+            
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 900px) {
+    header{
+        .container{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .lang{
+                a{
+                    text-transform: uppercase;
+                    margin-right: 5px;
+                }
+            }
+            .conn{
+                display: flex;
+                img{
+                    padding-right: 6px;
+                }
+                .phone{
+                    margin-right: 35px;
+                }
+                
+            }
+            .social{
+                display: flex;
+                margin: 0px ;
+                img{
+                    margin-right: 6px;
+                }
+                .search{
+                    margin-right: 25px;
+                }
+            }
+        }
+    }
+}
+
+// start logo
+.logo{
+    margin-top: 30px;
+    .container{
+        display: flex;
+        justify-content: space-around;
+        .left{
+            margin-right: 25px;
+            display: flex;
+            .left-left{
+               
+                margin-right: 20px;
+            }
+            .left-right{
+                width: 80%;
+                img{
+                    width: 100%;
+                }
+                img.sub{
+                    width: 300px;
+                }
+            }
+        }
+        .right{
+            margin-left: 45px;
+            display: flex;
+            .right-left{
+                margin-right: 20px;
+            }
+            .right-right{
+                width: 84%;
+                img{
+                    width: 100%;
+                }
+                img.sub{
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .logo{
+        .container{
+            display: block;
+            .center{
+                display: none;
+            }
+            .left{    
+                margin-right: 5px;
+                width: 100%;
+                display: flex !important;
+                margin-bottom: 20px;
+                .left-left{
+                    margin-right: 20px;
+                }
+                .sub{
+                    width: 200px !important;
+                }
+            }
+            .right{
+                width: 100%;
+                display: flex !important;
+                margin-bottom: 20px;
+                margin-left: 0px;
+                margin-top: 30px;
+                .right-left{
+                    margin-left: 0px;
+                    margin-right: 13px;
+                }
+                .sub{
+                    width: 200px !important;
+                }
+               
+            }
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .logo{
+        .container{
+            display: block;
+            .center{
+                display: none;
+            }
+            .left{    
+                margin-right: 5px;
+                width: 100%;
+                display: flex !important;
+                margin-bottom: 20px;
+                .left-left{
+                    margin-right: 20px;
+                }
+                .sub{
+                    width: 200px !important;
+                }
+            }
+            .right{
+                width: 100%;
+                display: flex !important;
+                margin-bottom: 20px;
+                margin-left: 0px;
+                margin-top: 30px;
+                .right-left{
+                    margin-left: 0px;
+                    margin-right: 13px;
+                }
+                .sub{
+                    width: 200px !important;
+                }
+               
+            }
+        }
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .logo{
+        margin-top: 30px;
+        .container{
+            display: flex;
+            justify-content: space-around;
+            .left{
+                margin-right: 25px;
+                display: flex;
+                .left-left{
+                   
+                    margin-right: 20px;
+                }
+                .left-right{
+                    width: 80%;
+                    img{
+                        width: 100%;
+                    }
+                    img.sub{
+                        width: 300px;
+                    }
+                }
+            }
+            .right{
+                margin-left: 45px;
+                display: flex;
+                margin-top: 0px;
+                .right-left{
+                    margin-right: 20px;
+                }
+                .right-right{
+                    width: 84%;
+                    img{
+                        width: 100%;
+                    }
+                    img.sub{
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
+}
+.nav{
+    .container{
+        ul{
+            list-style: none;
+            display: flex;
+            .rel{
+                position: relative;
+                .abs{
+                    position: absolute ;
+                    left: 8%;
+                    display: block;
+                }
+            }
+        }
+        
+    }
+}
